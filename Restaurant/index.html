@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bakery</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-image: url(https://img.freepik.com/premium-photo/delicious-cakes-bakery_968957-20026.jpg?semt=ais_hybrid&w=740&q=80);
+        width: 100%;
+        height: 660px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    color: aliceblue;
+    margin-top:8px ;
+}
+ol{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 40px;
+}
+ol a{
+    text-decoration: none;
+    color: aliceblue;
+}
+ol a:hover{
+    color: rgb(219, 46, 89);
+    font-size:20px;
+}
+.sec1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.abouts{
+    display: flex;
+    margin: 20px;
+    gap: 150px;
+    width: 100%;
+} 
+.box1{
+    width: 30%;
+    height: 150px;
+    margin-left: 70px;
+
+}
+.box1 h1{
+    font-size: 60px;
+}
+.box1 p{
+    font-size: 20px;
+    color: grey;
+}
+.pie{
+    display: flex;
+    margin: 20px;
+    gap: 130px;
+    margin-top: 70px;
+    width: 100%;
+} 
+.pie img{
+    width: 600px;
+     height: 550px;
+    margin-left: 70px;
+}
+.box2{
+   width: 30%;
+    height: 150px;
+}
+.box2 h1{
+    font-size: 60px;
+}
+.box2 p{
+    font-size: 20px;
+    color: grey;
+}
+button{
+    color: aliceblue;
+    background-color: red;
+    border-radius: 5%;
+    border: none;
+    width: 30%;
+    height: 40px;
+    padding: 10px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color:transparent;
+    cursor: pointer;
+    color: black;
+    border: solid black;
+}
+
+.sec2{
+    background-image: url(https://www.shutterstock.com/image-illustration/dark-background-grainy-texture-drawn-260nw-2644294651.jpg);
+    width: 100%;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-top: 100px;
+
+}
+.sec2 h1{
+    text-align: center;
+    font-size: 60px;
+    margin: 30px; 
+}
+.sec2 h5{
+    text-align: center;
+    font-size: 20px;
+}
+.m1,.m2,.m3,.m4 {
+    background-color: rgba(221, 218, 220, 0.959);
+    border-radius: 10px;
+    color: black;
+    width: 250px;
+    height: 350px;
+    margin-left: 40px;
+    padding: 10px;
+}
+.menu div{
+    margin-top: 100px;
+}
+.menu div img{
+    margin-left: 60px;
+}
+.menu{
+    display: flex;
+    gap: 10px;
+}
+.menu div h3{
+    text-align:center;
+    font-size: 25px;
+    margin-top: 25px
+}
+.menu div p{
+    text-align:center;
+    margin-top: 15px;
+    color:rgb(61, 57, 57);
+}
+.menu div h6{
+    text-align:center;
+    margin-top: 18px;
+    color:rgba(80, 78, 78, 0.856);
+    text-decoration: underline;
+    font-size: 20px;
+}
+.sec3{
+    margin-top: 350px;
+    margin-bottom: 200px;
+}
+.section3{
+    display: flex;
+    margin-left: 100px;
+}
+.form{
+    background-color: rgba(221, 218, 220, 0.959);
+    padding: 30px;
+    width: 520px;
+    border-radius: 10px;
+}
+form {
+    padding-top: 30px;
+}
+form input,
+form textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #4b4b4b;
+    font-size: 14px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #252525;
+}
+
+form textarea {
+    resize: none;
+    height: 70px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+.form h1{
+    font-size: 45px;
+    margin-top: 40px;
+}
+.form p{
+    padding-top: 25px;
+}
+form button{
+    margin-top: 35px;
+    size:20px;
+    font-size: 15px;
+    margin-left: 150px;
+}
+
+footer{
+     display: flex;
+    background-color: #0c072e;
+    gap: 50px;
+    width: 100%;
+    height: 400px;
+}
+footer h3{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 80px;
+}
+footer p{
+    color: #afafaf;
+     margin-top:10px ;
+     font-size: 16px;
+}
+footer div{
+    width: 170px;
+    height: 250px;
+    margin-left: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer a:hover{
+    color: rgb(219, 46, 89);
+    font-size:20px;
+}
+footer form{
+    color: #fff;
+}
+footer .button{
+      color: aliceblue;
+    background-color: red;
+    border-radius: 5%;
+    border: none;
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+footer .button:hover{
+    background-color:transparent;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: solid rgb(255, 255, 255);
+    
+}
+</style>
+<body>
+   <header>
+    <div>
+        <nav>
+            <div class="left">
+            <img src="https://preview.colorlib.com/theme/bakery2/img/logo-2.png" alt="">
+            </div>
+            <div class="right">
+            <ol>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="index.html"><li>ABOUT</li></a>
+                <a href="index.html"><li>MENU</li></a>
+                <a href="index.html"><li>CONTACT US</li></a>
+            </ol>
+            </div>
+        </nav>
+    </div>
+   </header> 
+
+   <section class="sec1">
+    <div class="abouts">
+
+       <div class="box1">
+        <h1>About <br> Our Story</h1>
+        <br>
+        <p>Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       <br>
+       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip consequat.</p>
+       <button>VIEW FULL MENU</button>
+    </div>
+    <div>
+        <img src="https://preview.colorlib.com/theme/bakery2/img/story/story-1.jpg" alt="">
+    </div>
+    </div>
+
+    <div class="pie">
+         <div >
+        <img src="https://preview.colorlib.com/theme/bakery2/img/story/story-2.jpg" alt="">
+    </div>
+       <div class="box2">
+        <h1>Honey <br>Chocolate Pie</h1>
+        <br>
+        <p>Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       <br>
+       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip consequat.</p>
+       <button>VIEW FULL MENU</button>
+    </div>
+   
+    </div>
+
+   </section>
+
+
+   <section class="sec2">
+      <h1>Our Menu</h1>
+      <h5>Explore</h5>
+
+      <div class="menu">
+            <div class="m1">
+                <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/80fec7903aa257c583e3dc80/3014502.png" alt="">
+                <h3>Bread</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <a href="index.html"><h6>learn more</h6></a>
+            </div>
+
+              <div class="m2">
+                <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/64c73585a412508b99bd4a49/4293088.png" alt="">
+                <h3>Pastries</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <a href="index.html"><h6>learn more</h6></a>
+            </div>
+
+             <div class="m3">
+                <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/80d732571697560683a15989/4127517.png" alt="">
+                <h3>Cakes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <a href="index.html"><h6>learn more</h6></a>
+            </div>
+
+             <div class="m4">
+                <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/73560c0696575becaf1a0f60/1047711.png" alt="">
+                <h3>Cookies</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <a href="index.html"><h6>learn more</h6></a>
+            </div>
+
+
+      </div>
+   </section>
+
+   <section class="sec3">
+    <div class="section3">
+          <div class="image">
+            <img src="https://preview.colorlib.com/theme/bakery2/img/book-table.jpg" alt="">
+          </div>
+          <div class="form">
+            <h1>Book a Table</h1>
+            <p>Who are in extremely love with eco friendly system lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            <form>
+                <input type="text" placeholder="Enter Your Name">
+                <input type="email" placeholder="Enter Email address">
+                <input type="number" placeholder="Enter Your Phone Number">
+                <input type="text" placeholder="Date And Time">
+
+                 <button>Make Reservation</button>
+            </form>
+
+           
+          </div>
+    </div>
+
+   </section>
+
+   <footer>
+       
+ <div>
+        <h3>Top Products</h3>
+            <a href="index.html"><p>Managed Website</p></a>  <br>
+             <a href="index.html"><p>Manage Reputation</p></a>  <br>
+              <a href="index.html"><p>Power Tools</p></a>  <br>
+               <a href="index.html"><p>Marketing Service</p></a>  <br>
+    </div>
+
+         
+<div>
+        <h3>Quick Links</h3>
+            <a href="index.html"><p>Jobs</p></a>  <br>
+             <a href="index.html"><p>Brand Assets</p></a>  <br>
+              <a href="index.html"><p>Investor Relations</p></a>  <br>
+               <a href="index.html"><p>Terms of Service</p></a>  <br>
+    </div>
+
+        
+ <div>
+        <h3>Features</h3>
+            <a href="index.html"><p>Jobs</p></a>  <br>
+             <a href="index.html"><p>Brand Assets</p></a>  <br>
+              <a href="index.html"><p>Investor Relations</p></a>  <br>
+               <a href="index.html"><p>Terms of Service</p></a>  <br>
+    </div>
+
+    
+ <div>
+        <h3>Resources</h3>
+            <a href="index.html"><p>Guides</p></a>  <br>
+             <a href="index.html"><p>Research</p></a>  <br>
+              <a href="index.html"><p>Experts</p></a>  <br>
+               <a href="index.html"><p>Agencies</p></a>  <br>
+    </div>
+
+
+    <div>
+        <h3>Newsletter</h3>
+            <p>Stay updated with our latest trends</p>  <br>
+              <form action="">
+         <input type="email" placeholder="Email Address">
+          <button class="button" type="submit"> SUBMIT </button>
+        </form>
+            </div>
+   </footer>
+</body>
+
+</html>
